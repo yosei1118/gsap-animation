@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+.cursor {
+  position: fixed;
+  background-color: blue;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: -10px 0 0 -10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.circles {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #b7c1bd;
+  overflow: hidden;
+}
+.circles > div {
+  position: absolute;
+  border-radius: 50%;
+}
+.circles :nth-child(1) {
+  z-index: 3;
+}
+.circles :nth-child(2) {
+  z-index: 2;
+}
+.circles :nth-child(3) {
+  z-index: 1;
+}
+.circles .circle1 {
+  width: 13.5rem;
+  height: 13.5rem;
+  margin: -6rem 0 0 -6rem;
+}
+.circles .circle2 {
+  width: 27rem;
+  height: 27rem;
+  margin: -12rem 0 0 -12rem;
+}
+.circles .circle3 {
+  width: 40.5rem;
+  height: 40.5rem;
+  margin: -18rem 0 0 -18rem;
+}
+.circles .color-purple {
+  background: purple;
+}
+.circles .color-red {
+  background: red;
+}
+.circles .color-green {
+  background: green;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  mix-blend-mode: screen;
+  z-index: 4;
+}
+.content h1 {
+  font-size: 9rem;
+}/*# sourceMappingURL=style.css.map */
